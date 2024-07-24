@@ -5,6 +5,7 @@ import { NosotrosPage } from './pages/NosotrosPage/NosotrosPage'
 import { ServiciosPage } from './pages/ServiciosPage/ServiciosPage'
 import { CartaPage } from './pages/CartaPage/CartaPage'
 import { TerminosCondicionesPage } from './pages/TerminosCondicionesPage/TerminosCondicionesPage'
+import { LocalesPage } from './pages/LocalesPage/LocalesPage'
 function App() {
   return (
     <>
@@ -14,6 +15,7 @@ function App() {
         <Route path="servicios" element={<ServiciosPage />} />
         <Route path="carta" element={<CartaPage />} />
         <Route path="terminos-condiciones" element={<TerminosCondicionesPage />} />
+        <Route path="locales" element={<LocalesPage />} />
       </Routes>
     </>
   )
