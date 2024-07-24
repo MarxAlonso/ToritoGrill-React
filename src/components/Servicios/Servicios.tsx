@@ -87,12 +87,16 @@ export const ServiciosThree = () => {
 export const ServiciosFour = () => {
   return (
     <div
-      className="container-fluid p-5"
+      className="container-fluid p-5 mb-5"
       style={{ marginBottom: "-15px", backgroundColor: "#FFF3E4" }}
     >
       <div className="row justify-content-center">
         <div className="col-md-4 py-md-5">
-          <img src="/src/assets/img/piso4.webp" alt="Piso 4" className="img-fluid" />
+          <img
+            src="/src/assets/img/piso4.webp"
+            alt="Piso 4"
+            className="img-fluid"
+          />
         </div>
         <div className="col-md-4 py-md-5">
           <h3 style={{ marginTop: 30 }}>
@@ -108,5 +112,61 @@ export const ServiciosFour = () => {
         </div>
       </div>
     </div>
+  );
+};
+export const ServiciosFive = () => {
+  return (
+    <>
+      <div className="container-fluid">
+        <div className="row justify-content-center">
+          <div className="col-md-8">
+            {" "}
+            {/* Ajusta el tamaño de la columna según tus necesidades */}
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-6">
+                  <div className="row">
+                    <div className="col-12 mb-3">
+                      <img
+                        src="/src/assets/img/sala1.webp"
+                        alt="Piso 2"
+                        className="img-fluid"
+                      />
+                    </div>
+                    <div className="col-12 mb-3">
+                      <img
+                        src="/src/assets/img/sala2.webp"
+                        alt="Piso 4"
+                        className="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-6">
+                  <img
+                    src="/src/assets/img/sala3.webp"
+                    alt="Piso 3"
+                    className="img-fluid"
+                  />
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div className="container-fluid">
+        <div className="row justify-content-center">
+          <div className="col-md-8 text-center">
+            {" "}
+            {/* Ajusta el tamaño de la columna según tus necesidades */}
+            <a href="contacto" className="reserva">
+              RESERVA AQUÍ
+            </a>
+          </div>
+        </div>
+      </div>
+    </>
   );
 };

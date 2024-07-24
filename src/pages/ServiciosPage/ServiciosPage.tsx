@@ -1,6 +1,6 @@
 import { Header } from "../../components/Header/Header";
 import { Footer } from "../../components/Footer/Footer";
-import { Servicios, ServiciosTwo, ServiciosThree, ServiciosFour } from "../../components/Servicios/Servicios";
+import { Servicios, ServiciosTwo, ServiciosThree, ServiciosFour, ServiciosFive } from "../../components/Servicios/Servicios";
 import { NosotrosThree } from "../../components/Nosotros/Nosotros";
 export const ServiciosPage = () =>{
     return(
@@ -10,6 +10,7 @@ export const ServiciosPage = () =>{
         <ServiciosTwo />
         <ServiciosThree />
         <ServiciosFour />
+        <ServiciosFive />
         <NosotrosThree />
         <Footer />
         </>
