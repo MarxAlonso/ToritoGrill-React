@@ -74,7 +74,37 @@ export const ServiciosThree = () => {
           <br />
         </div>
         <div className="col-md-4 py-md-5">
-          <img src="/src/assets/img/piso3.webp" alt="Piso 3" className="img-fluid" />
+          <img
+            src="/src/assets/img/piso3.webp"
+            alt="Piso 3"
+            className="img-fluid"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+export const ServiciosFour = () => {
+  return (
+    <div
+      className="container-fluid p-5"
+      style={{ marginBottom: "-15px", backgroundColor: "#FFF3E4" }}
+    >
+      <div className="row justify-content-center">
+        <div className="col-md-4 py-md-5">
+          <img src="/src/assets/img/piso4.webp" alt="Piso 4" className="img-fluid" />
+        </div>
+        <div className="col-md-4 py-md-5">
+          <h3 style={{ marginTop: 30 }}>
+            <b>Piso 4:</b>
+          </h3>
+          <br />
+          <p>
+            Una linda terraza te espera, celebra tus eventos en este espacio con
+            una amplia vista, buena música, tus platos y bebidas favoritas
+            también están aquí. ✨
+          </p>
+          <br />
         </div>
       </div>
     </div>
