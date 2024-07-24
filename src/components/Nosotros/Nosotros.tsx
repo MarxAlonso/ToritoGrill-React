@@ -115,3 +115,33 @@ export const NosotrosTwo = () => {
     </div>
   );
 };
+
+export const NosotrosThree = () => {
+  return (
+    <div className="container mb-5">
+      <hr style={{ border: "1px solid #000", marginBottom: 25 }} />
+      <div className="text-center redes">
+        <h2>
+          <b>Visita nuestras redes sociales:</b>
+        </h2>
+        <br />
+        <a
+          href="https://www.facebook.com/people/Torito-Grill/100063782141554/"
+          target="_blank"
+        >
+          <i className="bi bi-facebook" /> Facebook
+        </a>
+        <a href="https://www.instagram.com/toritogrillperu/" target="_blank">
+          <i className="bi bi-instagram" /> Instagram
+        </a>
+        <a href="https://www.tiktok.com/@toritogrillperu" target="_blank">
+          <i className="bi bi-tiktok" /> Tik Tok
+        </a>
+        <a href="https://wa.link/3mxkpp" target="_blank">
+          <i className="bi bi-whatsapp" /> Whatsapp
+        </a>
+      </div>
+      <hr style={{ border: "1px solid #000", marginBottom: 25 }} />
+    </div>
+  );
+};
