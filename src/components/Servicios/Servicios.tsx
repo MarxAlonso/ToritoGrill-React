@@ -1,3 +1,4 @@
+import "../../assets/css/style.css";
 export const Servicios = () => {
   return (
     <div className="container-fluid px-5" style={{ marginBottom: 30 }}>
