@@ -29,7 +29,7 @@ export const Footer = () => {
             <br />
             <a
               className="menus"
-              href="inicio"
+              href="/"
               style={{ fontSize: 16, color: "white", marginBottom: 12 }}
             >
               Inicio

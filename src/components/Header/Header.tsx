@@ -46,8 +46,8 @@ export const Header = () => {
           </li>
           <li>
             <a
-              className="contact"
-              href="contacto"
+              className="contact" target="_blank"
+              href="https://api.whatsapp.com/send?phone=51978105066"
               style={{ fontSize: 13, padding: "10px 20px", color: "white" }}
             >
               <b>CONTÁCTANOS</b>
