@@ -10,12 +10,12 @@ export const Header = () => {
             style={{ backgroundColor: "white", borderRadius: 10 }}
           />
         </label>
-        <a href="inicio" className="enlace">
+        <a href="/" className="enlace">
           <img src="/src/assets/img/torito-grill.webp" alt="" className="logo" />
         </a>
         <ul>
           <li>
-            <a className="active" href="inicio" style={{ fontSize: 13 }}>
+            <a className="active" href="/" style={{ fontSize: 13 }}>
               <b>INICIO</b>
             </a>
           </li>
