@@ -1,12 +1,8 @@
-
-
 body {
     margin: 0;
     padding: 0;
 }
-
 /***  NAV DE LOGO Y MENU **/
-
 .navegaciones {
     border-top: 2px solid white;
     border-bottom: 2px solid white;
@@ -525,3 +521,24 @@ a.contact {
 }
 
 
+/* Scrollbar general */
+::-webkit-scrollbar {
+  width: 12px; /* Ancho del scrollbar */
+}
+
+/* Fondo del scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo */
+  border-radius: 10px; /* Bordes redondeados (opcional) */
+}
+
+/* La parte que se mueve del scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #862510; /* Color del scrollbar */
+  border-radius: 7px; /* Bordes redondeados */
+}
+
+/* Cambiar color al pasar el cursor */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #883421; /* Color al pasar el cursor */
+}
