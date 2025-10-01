@@ -1,17 +1,40 @@
 import "../../assets/css/style.css";
+import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { ScrollReveal } from "../shared/animations";
+
 export const Home = () => {
   return (
     <section>
-      <div className="fondo-imagen">
-        <img
+      <motion.div 
+        className="fondo-imagen"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+      >
+        <motion.img
           src="/src/assets/img/fondo-inicio.webp"
           className="img-fluid"
           alt="Fondo de inicio"
+          initial={{ scale: 1.1 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.5, ease: "easeOut" }}
         />
-        <a className="pide-aqui" href="contacto">
-          <b>PIDE AQUÍ</b>
-        </a>
-      </div>
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.5, duration: 0.8 }}
+        >
+          <Link className="pide-aqui" to="/contacto">
+            <motion.b
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              PIDE AQUÍ
+            </motion.b>
+          </Link>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
@@ -22,16 +45,35 @@ export const Contenido = () => {
       <div className="container" style={{ backgroundColor: "#FEF3E4" }}>
         <div className="row">
           <br />
-          <div className="col-md-6 pollito" style={{ padding: 15 }}>
-            <img
+          <ScrollReveal className="col-md-6 pollito" style={{ padding: 15 }}>
+            <motion.img
               src="/src/assets/img/pollo-1.webp"
               alt="Pollito"
               className="img-fluid"
+              whileHover={{ 
+                scale: 1.03,
+                transition: { duration: 0.3 }
+              }}
             />
-          </div>
-          <div className="col-md-6" style={{ marginTop: 20, padding: 15 }}>
-            <p style={{ fontSize: 20 }}>
-              <b>Conócenos</b>
+          </ScrollReveal>
+          <ScrollReveal 
+            className="col-md-6" 
+            style={{ marginTop: 20, padding: 15 }}
+            delay={0.3}
+          >
+            <motion.p 
+              style={{ fontSize: 20 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
+              <motion.b
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.5, duration: 0.5 }}
+              >
+                Conócenos
+              </motion.b>
               <br />
               <br />
               <br />
@@ -42,8 +84,8 @@ export const Contenido = () => {
               acompañando nuestros platos de papitas naturales <br />
               amarillas con cáscara. Convirtiéndonos así en los <br />
               pioneros en el mercado con esta novedad.
-            </p>
-          </div>
+            </motion.p>
+          </ScrollReveal>
         </div>
       </div>
     </section>

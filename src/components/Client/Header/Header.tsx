@@ -1,4 +1,4 @@
-import "../../assets/css/style.css";
+
 export const Header = () => {
   return (
     <div className="sticky-top container-fluid p-0 m-0">
