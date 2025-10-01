@@ -11,6 +11,7 @@ const LazyCartaPage = lazy(() => import('./pages/CartaPage/CartaPage').then(modu
 const LazyTerminosCondicionesPage = lazy(() => import('./pages/TerminosCondicionesPage/TerminosCondicionesPage').then(module => ({ default: module.TerminosCondicionesPage })))
 const LazyLocalesPage = lazy(() => import('./pages/LocalesPage/LocalesPage').then(module => ({ default: module.LocalesPage })))
 const LazyClientePage = lazy(() => import('./pages/ClientePage/ClientePage').then(module => ({ default: module.ClientePage })))
+const LazyPageNotFound = lazy(() => import('./pages/PageNotFound/PageNotFound').then(module => ({ default: module.PageNotFound })))
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <Route path="terminos-condiciones" element={<LazyTerminosCondicionesPage />} />
           <Route path="locales" element={<LazyLocalesPage />} />
           <Route path="eventos" element={<LazyClientePage />} />
+          <Route path="*" element={<LazyPageNotFound />} />
         </Routes>
       </Suspense>
       
